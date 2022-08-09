@@ -1,0 +1,15 @@
+{
+  "name": "api-anime",
+  "version": "1.0.0",
+  "description": "Une API transformant les requêtes de l'API Jikan en un front détailler",
+  "main": "nodemon index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miu.AH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}

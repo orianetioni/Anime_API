@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr 0.3fr;
+    gap: 2em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.container>div {
+    border: 1px dashed #888;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    padding: 1em;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(26, 188, 237, 0.2));
+    border-radius: 0.5rem;
+
+}
+
+.footer {
+    grid-area: footer;
+    padding: 1em;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(26, 188, 237, 0.2));
+    border-radius: 0.5rem;
+
+}
+
+.result {
+    display: flex;
+    gap: 10px 20px;
+    
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 0.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(58, 89, 212, 0.2));
+    justify-content: center;
+}
