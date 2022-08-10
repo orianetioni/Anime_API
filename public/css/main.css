@@ -39,14 +39,21 @@
 
 .result {
     display: flex;
-    gap: 10px 20px;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: space-between;
     
 }
 .card {
-    display: flex;
-    flex-wrap: wrap;
     padding: 1em;
     border-radius: 0.5rem;
     background: linear-gradient(rgba(0, 0, 0, 0),rgba(58, 89, 212, 0.2));
-    justify-content: center;
 }
+
+.card:hover {
+
+    border: 3px skyblue solid;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
